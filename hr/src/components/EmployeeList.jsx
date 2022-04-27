@@ -25,8 +25,8 @@ useEffect(() => {
     style={{
       display: "grid",
       gridTemplateColumns: "repeat(3, 1fr)",
-      gridGap: "20px",
-      padding: "20px",
+      gridGap: "15px",
+      padding: "18px",
     }}
   >
     {/* On clicking this card anywhere, user goes to user details */}

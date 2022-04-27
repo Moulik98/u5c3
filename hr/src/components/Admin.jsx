@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export const Admin = () => {
   
-    const [formData, setformData] = useState({
+    const [formData, setFormData] = useState({
         employee_name: '',
             employee_id: '',
             title: '',
@@ -18,7 +18,7 @@ export const Admin = () => {
       const handleChange = (e) => {
         const { name, value } = e.target;
     
-        setformData({
+        setFormData({
           ...formData,
           [name]:value,
         })
