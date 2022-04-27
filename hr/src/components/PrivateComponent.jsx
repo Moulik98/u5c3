@@ -1,16 +1,16 @@
-import{useContext} from "react";
+// import{useContext} from "react";
 
-import { Navigate } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
 
 
-export const PrivateComponent =({children})=>{
+// export const PrivateComponent =({children})=>{
 
-    const{isAuth}=useContext(AuthContext);
+//     const{isAuth}=useContext(AuthContext);
 
-    if(!isAuth){
-        return <Navigate to= "/login" />
+//     if(!isAuth){
+//         return <Navigate to= "/login" />
 
-    }
+//     }
 
-    return children
-}
+//     return children
+// }

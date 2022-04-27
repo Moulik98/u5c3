@@ -14,20 +14,18 @@ import { Logout } from "./components/Logout";
 function App() {
 
   return (
-  <div className="App">
-  <Navbar/>
-  <Routes>
-
-  {/* <Route>
-    
-  </Route> */}
-    <Route path= "/" element={<Home/>}></Route>
-    <Route path="/employees" element={<EmployeeList/>}></Route>
-    <Route path="/login" element={<Login/>}></Route>
-  </Routes>
-
-    </div>
-  );
+    <div className="App">
+    <Navbar />
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/employees" element={<EmployeeList />} />
+      <Route exact path="/employees/:id" element={<EmployeeDetails />} />
+      <Route exact path="/admin" element={<Admin />} />
+      <Route exact path="/login" element={<Login />} />
+      <Route exact path="/logout" element={<Logout />} />
+    </Routes>
+  </div>
+);
   
 }
 

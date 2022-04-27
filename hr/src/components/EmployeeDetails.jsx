@@ -1,4 +1,19 @@
+import { useEffect, useState  } from "react";
+import {useParams} from "react-router-dom";
+import axios from "axios";
+
 export const EmployeeDetails = () => {
+
+  const { id } = useParams();
+  const [user, setUser] = useState({});
+  useEffect(() => {
+    
+    axios.get(`http://localhost:8080/employee/${id}`).then(({ data }) => {
+      setUser(data);
+    })
+  }, []);
+
+  console.log(user);
   return (
     <div className="user_details">
       <img className="user_image" />

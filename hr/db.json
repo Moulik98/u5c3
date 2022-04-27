@@ -1,5 +1,5 @@
 {
-  "posts": [
+  "employee": [
     {
       "id": 1,
       "employee_name": "Kial Bengtsen",
@@ -130,15 +130,5 @@
       "status": "working",
       "team": "backend"
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
