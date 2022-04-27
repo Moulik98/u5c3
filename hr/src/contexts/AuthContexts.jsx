@@ -1,12 +1,12 @@
-import { createContext } from "react";
+// import { createContext } from "react";
 
-export const AuthContext = createContext()
+// export const AuthContext = createContext()
 
-export const AuthContextProvider =({children})=>{
-    const[isAuth,setIsAuth]=useState(false);
+// export const AuthContextProvider =({children})=>{
+//     const[isAuth,setIsAuth]=useState(false);
 
-    const handelAuth = (state)=>{
-        setIsAuth(state)
-    }
-    return <AuthContext.provider value={{isAuth,handleAuth}}>{children}</AuthContext.provider>
-};
+//     const handelAuth = (state)=>{
+//         setIsAuth(state)
+//     }
+//     return <AuthContext.provider value={{isAuth,handleAuth}}>{children}</AuthContext.provider>
+// };
